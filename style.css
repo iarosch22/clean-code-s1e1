@@ -37,8 +37,8 @@
 .new-task-content {
   display: flex;
 }
-#incomplete-tasks-section,
-#completed-tasks-section {
+#incomplete-tasks,
+#completed-tasks {
   margin: 0;
   padding: 0px;
 }
@@ -134,7 +134,7 @@ label[for="new-task"] {
 }
 
 /* Completed */
-#completed-tasks-section .task-label {
+#completed-tasks .task-label {
   text-decoration: line-through;
   color: #888;
 }
