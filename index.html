@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <HEAD><title>Todo App</title>
+  <HEAD>
+    <title>Todo App</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="style.css"  media="screen" charset="utf-8">
   </HEAD>
   <body class="page">
-    <div class="info-section">
-      <img src="./eisenhower-matrix.jpg" class="info-img">
-      <a class="info-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="content-page">
+    <header class="header">
+      <div class="info-section">
+        <img src="./eisenhower-matrix.jpg" class="info-img">
+        <a class="info-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+      </div>
+    </header>
+    <main class="content-page">
       <p id="new-task-section">
         <label for="new-task" class="section-title">Add Item</label>
         <div class="new-task-content">
@@ -27,7 +30,7 @@
           <button class="delete task-btn"><img src="./remove.svg" class="img-btn"></button>
         </li>
         <li class="task-item edit-mode">
-          <input type="checkbox">
+          <input type="checkbox" class="input-checkbox">
           <label class="task task-label">Go Shopping</label>
           <input type="text" value="Go Shopping" class="task input-text">
           <button class="edit task-btn">Save</button>
@@ -37,14 +40,14 @@
       <h3 class="section-title">Completed</h3>
       <ul id="completed-tasks-section">
         <li class="task-item">
-          <input type="checkbox" checked>
+          <input type="checkbox" class="input-checkbox" checked>
           <label class="task task-label">See the Doctor</label>
           <input type="text" class="task input-text">
           <button class="edit task-btn">Edit</button>
           <button class="delete task-btn"><img src="./remove.svg" class="img-btn"></button>
         </li>
       </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
