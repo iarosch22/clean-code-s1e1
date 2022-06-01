@@ -91,7 +91,7 @@
 }
 
 /* New Task */
-label[for="new-task"] {
+.new-task-label {
   display: block;
   margin: 0 0 20px;
 }
@@ -121,7 +121,7 @@ label[for="new-task"] {
   font-size: 18px;
   width: 226px;
 }
-.task-item >    .input-text {
+.task-item > .input-text {
   width: 226px;
 }
 .delete .img-btn {
